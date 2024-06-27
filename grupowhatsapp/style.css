@@ -12,11 +12,16 @@ div#out_2 {
 div#in_1,
 div#in_2,
 div#in_3,
-div#in_4 {
+div#in_4,
+div#in_5 {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+div#in_5 {
+    display:none;
 }
 
 #family {
@@ -87,4 +92,28 @@ div#in_4 {
 
 #logo-div {
     text-align: center;
+}
+
+@media screen and (max-width: 833px) {
+    div#out_1,
+    div#out_2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div#in_3 {
+        display:none;
+    }
+
+    div#in_5 {
+        display: inline;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    
 }
